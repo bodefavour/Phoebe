@@ -65,6 +65,9 @@
                 transform: scale(1.1);
             }
         }
+        #letter-container {
+            display: none; /* Initially hide the letter */
+        }
     </style>
 </head>
 <body>
@@ -110,6 +113,13 @@
 <p>I guess you've ended us from your end now, even tho i would keep on trying for us, loving me is not hard, i really did not have high standards, and if I’ve hurt you or not been enough, I’m truly sorry. I’ve tried my best too.</p>
     </div>
 
+    <!-- The response form -->
+        <form id="responseForm" onsubmit="sendEmail(event)">
+            <label for="response">Do you still believe in us? Write your thoughts here:</label><br>
+            <textarea id="response" name="response" rows="4" cols="50" placeholder="Your message..."></textarea><br>
+            <button type="submit">Send Response</button>
+        </form>
+
     <audio autoplay loop>
         <source src="Lord-Huron-The-Night-We-Met-(RawPraise.ng).mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -125,6 +135,15 @@
                 }, 1000 * (index + 1)); // Each paragraph fades in 1 second apart
             });
         });
+
+        // Listen for the 'play' event on the audio element
+        music.addEventListener('play', function() {
+            letter-container.style.display = 'block';  // Show the letter when the music starts playing
+        });
+
+        <!-- Include the JavaScript file for sending the email -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="sendResponse.js"></script>
     </script>
 </body>
 </html>
