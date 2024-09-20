@@ -115,6 +115,7 @@ but then you did things too, and I let all that slide and hardly talk about how 
 
 <p>You cleared our chat everytime we've had a disagreement, but I never did and never even changed your name, but you instead acted like we were nothing, you talked bad about me to many of your friends of which I never did, everytime I told my friends or anybody about you, I made you the most special person I've ever met, even yesterday i talked with Yeshua about you</p>
 <p>I was never ashamed of showing you</p>
+    <p>I guess you've ended us, but I'm sorry in anyway I've hurt you or not been enough, I'm trying my best too</p>
     </p>
     <audio autoplay loop>
         <source src="Lord-Huron-The-Night-We-Met-(RawPraise.ng).mp3" type="audio/mpeg">
@@ -124,11 +125,15 @@ but then you did things too, and I let all that slide and hardly talk about how 
     <!-- JavaScript Section -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const letter = document.querySelector("p");
-            setTimeout(() => {
-                letter.style.opacity = 1;
-            }, 1000); // Fades in after 1 second
+            const paragraphs = document.querySelectorAll("#letter-container p");
+            paragraphs.forEach((paragraph, index) => {
+                setTimeout(() => {
+                    paragraph.style.opacity = 1;
+                }, 1000 * (index + 1)); // Each paragraph fades in 1 second apart
+            });
         });
     </script>
+</body>
+</html>
 </body>
 </html>
