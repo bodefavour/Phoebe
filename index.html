@@ -33,26 +33,28 @@
         }
         .heart {
             position: absolute;
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             background: red;
             transform: rotate(45deg);
+            top: 30px; /* Adjust heart position */
+            left: 20px;
             animation: heartbeat 1.5s infinite alternate;
         }
         .heart::before, .heart::after {
             content: '';
             position: absolute;
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 100px;
             background: red;
         }
         .heart::before {
-            top: -100px;
+            top: -75px;
             left: 0;
         }
         .heart::after {
-            left: 100px;
+            left: 75px;
             top: 0;
         }
         @keyframes heartbeat {
@@ -68,55 +70,46 @@
 <body>
     <div class="heart"></div>
     <h1>My Heartfelt Letter</h1>
-    <p>Phoebe, if you feel like I never loved you and never made you feel loved, don't be quick to forget the past
-I want you to think back at times when were in school, if you can recall the memories, places in which I actually showed love
-It wouldn't be right if I start saying them myself, in everyway I can I sacrificed and showed love to you 
-If you feel my love were mere words and without actions, really think back about times in school, times we spent alone, those things I did in secret, if you don't count them as acts of love, then no problem, I did it in the little way I can 
-I'm an human too, and I needed love too, every anger, every outburst of emotion, every long texts explaining their feelings is coming from pain I feel deep down
-It's not the best way to express it, but it's out of feeling unloved</p>
-        
-<p>Every show or acts of love from me was me showing how I also want to be loved
-I also yearn for love as much as you do, every single time
-If you feel I never loved you, don't be quick to forget the past 
-Don't let everything that happens now give you the thinking I never showed love or question if I ever loved you</p>
-        
-<p>Even now, if you think I don't love you
-You're aware I'm writing down my feelings about you, I'm writing a diary about us, I'm writing all my experiences at Aro just so you'd read it if we get back to school
-I'm working on a website just for you
-Every help, every actions were acts of love
-You know for sure I'd always pick you over any other person 
-Remember when I went to students camp and I was thoughtful enough to pick flowers for you while I was coming, but the flower dried up before I came back, I cannot afford a real flower, but I did try my best
-Every single morning I woke up I prayed for you even once when I was moved to tears during the prayer, I prayed to God you'd be happy and things would begin to go well for you and your family, you don't count that as love
-Everytime I silently fasted and prayed for you
-Even one time I saw how bad you were feeling for your sister and her not gaining admission, that I had to go on a 3 days fasting and prayer, and that's not love
-Every word of support, making you realize that you have a bright future and God loves you so much to fail you
-Everytime I put your own needs above mine, isn't that love?
-Thinking of times I really did go a long way to show you love, the money I told you I was saving with you and lied I wanted to use to buy something for myself was to get a Bible for our 6th month anniversary but I converted it to your transport instead because I wanted you to travel that time, do you know I starved myself the next day, so you'd go home and be happy, thinking about how bad you wanted to attend your dad's induction that you were moved to tears, I decided to save up since it was money that made your mum not too allow you come, you don't count that as love
-Scenarios where you'd be in need and ask from me and I wouldn't find it shameful to beg from my friends to help you get it so you wouldn't lack because I knew what position you were
-Just some of all I could remember in ways I showed love
-I'm not trying to justify myself or make myself look special 
-I'm just showing you how much I love you and showed you love in case you forgot.</p>
 
-<p>And you question if I loved you or whether I'm the the one for you
-and you are hardened by the fact that I'm a bad person in your mind, 
-and you believe I'm not a good partner
-Despite all the sacrifices and love</p>
-<p>I got statements like "I don't want you to help me again because I don't want to feel indebted to you and I don't want you to be entitled to my success"
-Everytime I begged just so we'd stay together whenever you wanted to leave
-Everytime I tried holding us together even when you clearly did not want me
-It still rings in my mind how everytime you'd laugh at me whenever I did that and treat me like nothing everytime, just because I value you and our relationship</p>
+    <!-- Letter paragraphs -->
+    <div id="letter-container">
+        <p>Phoebe, if you feel like I never loved you or made you feel loved, please don’t be quick to forget the past. I want you to think back to our times in school, if you can recall the memories, the places where I actually showed love. It wouldn't be right if I start listing them myself, but in every way I could, I sacrificed and showed love to you.</p>
 
-<p>You get angry everytime I say I don't feel loved, but in all considering all this, I keep doing it even when I really did not get appreciated 
-In as much as you want to be treated special, I also yearn to be too
-I realized you never did forgive me for everything I did at the beginning of the relationship and those memories always stick to your mind and made you unable to love me since then
-but then you did things too, and I let all that slide and hardly talk about how I feel bad and loved you despite that</p>
+<p>If you feel my love was just words without actions, really think back to those times in school, the times we spent alone, the things I did in secret. If you don’t count those as acts of love, then no problem – I did what I could, in the little ways I could.</p>
 
-<p>I might not know your own perspective, but view things from my own perspective too, if I was a little bit more abundant, I would have shown you even greater love, coming from a boy who never felt loved growing up, i want you to know i did try</p>
+<p>I'm human too, and I needed love just as much. Every moment of anger, every outburst of emotion, and every long message explaining my feelings was coming from the pain I felt deep down. It wasn’t the best way to express it, but it stemmed from feeling unloved.</p>
 
-<p>You cleared our chat everytime we've had a disagreement, but I never did and never even changed your name, but you instead acted like we were nothing, you talked bad about me to many of your friends of which I never did, everytime I told my friends or anybody about you, I made you the most special person I've ever met, even yesterday i talked with Yeshua about you</p>
-<p>I was never ashamed of showing you</p>
-    <p>I guess you've ended us, but I'm sorry in anyway I've hurt you or not been enough, I'm trying my best too</p>
-    </p>
+<p>Every act of love from me was my way of showing how I also wanted to be loved. I yearned for love just as much as you did – every single time. If you feel I never loved you, don’t be quick to forget the past. Don’t let what happens now make you question whether I ever loved you.</p>
+
+<p>Even now, if you think I don’t love you, you know that I’m still writing down my feelings about you. I’m writing a diary about us and all my experiences at Aro, just so you’d read it if we ever get back to school. I’m working on a website just for you. Every act of help, every action, was a display of love.</p>
+
+<p>You know for sure I’d always pick you over anyone else. Remember when I went to the student camp and was thoughtful enough to pick flowers for you while coming back? The flower dried up before I arrived, but I still tried my best, even though I couldn’t afford a real one.</p>
+
+<p>Every single morning I woke up, I prayed for you. Once, I was even moved to tears during prayer, asking God to make you happy and bless your family. Do you not count that as love? I fasted silently for you, even for three days when I saw how heartbroken you were over your sister’s admission. Was that not love?</p>
+
+<p>Every word of support, every reminder of your bright future and how much God loves you – those were acts of love. Every time I put your needs above mine, wasn’t that love?</p>
+
+<p>I remember the time I lied about saving money to buy something for myself, when I was actually planning to get a Bible for our sixth-month anniversary. But instead, I used that money to cover your transport because I wanted you to travel. I even starved myself the next day so you’d go home happy. Or the time I saved up because I saw how much you wanted to attend your dad’s induction, and I didn’t want money to be the reason you couldn’t go. Do you not count those things as love?</p>
+
+<p>There were times when you needed something, and I wasn’t ashamed to ask my friends for help, just so you wouldn’t lack. These are just a few examples I could remember of how I showed love.</p>
+
+<p>I’m not trying to justify myself or make myself look special. I just want to show you how much I loved you and remind you of the ways I showed love, in case you’ve forgotten.</p>
+
+<p>And now, you question if I ever loved you or if I’m the right person for you. You’ve hardened your heart against me, convinced I’m a bad person, a bad partner. Even with all the sacrifices and acts of love, I’ve received comments like, “I don’t want you to help me again because I don’t want to feel indebted or entitled to your success.”</p>
+
+<p>I’ve begged countless times for us to stay together whenever you wanted to leave. I’ve tried to hold us together, even when it was clear you didn’t want me. It still hurts remembering how you’d laugh at me when I did that, treating me like nothing – just because I valued you and our relationship.</p>
+
+<p>You get upset when I say I don’t feel loved, but considering everything, I kept showing love even when I wasn’t appreciated. As much as you want to be treated special, I wanted that too.</p>
+
+<p>I realized you never truly forgave me for everything that happened at the beginning of our relationship, and those memories have stayed with you, preventing you from loving me fully since then. But you’ve hurt me too, and I let it go, choosing to love you despite everything.</p>
+
+<p>I may not fully know your perspective, but I hope you can see things from mine too. If I had been more abundant, I would have shown you even greater love.</p>
+
+<p>You erased our chats every time we had a disagreement, but I never did. I never even changed your name, while you acted like we were nothing. You spoke badly about me to many of your friends, while I always made you sound like the most special person I’ve ever met, even when I spoke to Yeshua yesterday. I was never ashamed to show you off.</p>
+
+<p>I guess you've ended us from your end now, even tho i would keep on trying for us, loving me is not hard, i really did not have high standards, and if I’ve hurt you or not been enough, I’m truly sorry. I’ve tried my best too.</p>
+    </div>
+
     <audio autoplay loop>
         <source src="Lord-Huron-The-Night-We-Met-(RawPraise.ng).mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -133,7 +126,5 @@ but then you did things too, and I let all that slide and hardly talk about how 
             });
         });
     </script>
-</body>
-</html>
 </body>
 </html>
