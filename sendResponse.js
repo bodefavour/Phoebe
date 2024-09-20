@@ -16,7 +16,7 @@ function sendEmail(event) {
     };
 
     // Send the email using EmailJS
-    emailjs.send('service_ewwqqnk', '__ejs-test-mail-service__', templateParams)
+    emailjs.send('service_ewwqqnk', 'template_q6h7yoj', templateParams)
         .then(function(response) {
             alert('Your response has been sent successfully!');
         }, function(error) {
