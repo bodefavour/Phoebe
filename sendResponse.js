@@ -7,16 +7,16 @@ function sendEmail(event) {
     let response = document.getElementById("response").value;
 
     // Initialize EmailJS with your user ID
-    emailjs.init("YOUR_USER_ID");
+    emailjs.init("8ciFt7VtaT1wR_wj0");
 
     // Set up the email parameters
     let templateParams = {
-        to_email: 'your-email@example.com',  // Your email address to receive the response
+        to_email: 'bodefavour@gmail.com',  // Your email address to receive the response
         message: response,                   // The response message from Phoebe
     };
 
     // Send the email using EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('service_ewwqqnk', '__ejs-test-mail-service__', templateParams)
         .then(function(response) {
             alert('Your response has been sent successfully!');
         }, function(error) {
