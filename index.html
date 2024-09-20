@@ -65,9 +65,6 @@
                 transform: scale(1.1);
             }
         }
-        #letter-container {
-            display: none; /* Initially hide the letter */
-        }
     </style>
 </head>
 <body>
@@ -135,15 +132,6 @@
                 }, 1000 * (index + 1)); // Each paragraph fades in 1 second apart
             });
         });
-
-        // Listen for the 'play' event on the audio element
-        music.addEventListener('play', function() {
-            letter-container.style.display = 'block';  // Show the letter when the music starts playing
-        });
-
-        <!-- Include the JavaScript file for sending the email -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script src="sendResponse.js"></script>
     </script>
 </body>
 </html>
